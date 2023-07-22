@@ -12,9 +12,11 @@ async function main() {
       _page: 1,
       _limit: 5,
     }
-    const response = await postApi.getAll(queryParams)
-    console.log(response)
-  } catch (error) {}
+    const data = await postApi.getAll(queryParams)
+    console.log('main.js data', data)
+  } catch (error) {
+    console.log('get all failed', error)
+  }
   // await postApi.getById('1121')
   await postApi.update({
     id: 'lea11ziflg8xoiy1',
