@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Post detail page</title>
+
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+
+    <!-- Use font Rubik -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
+
+    <!-- Internal CSS -->
+    
+    
+    <link rel="stylesheet" href="/assets/post-detail-020460a1.css">
+    <link rel="stylesheet" href="/assets/main-413a52b2.css">
+  </head>
+
+  <body>
+    <header>
+      <!-- Navigation
+      - Please note that we use an empty item to make sure that we always have 3 flex-items
+        so logo is at centered, and the left and the right item can be optional by leaving it empty
+    -->
+      <nav class="top-nav shadow-sm py-3">
+        <div class="container">
+          <ul class="nav justify-content-between align-items-center">
+            <li class="nav-item">
+              <a class="nav__link" href=".">
+                <img class="nav__logo" src="/assets/logo-c944a901.svg" alt="Logo Nordic Coder" />
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a id="goToEditPageLink" class="nav__link" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="postHeroImage" class="hero"></section>
+
+      <section class="post-detail">
+        <div class="container">
+          <div class="post-detail-main shadow-sm">
+            <div class="post-title-wrapper">
+              <h1 id="postDetailTitle">&nbsp;</h1>
+
+              <p>
+                <small class="text-muted">by</small>
+                <small id="postDetailAuthor" class="text-muted font-weight-bold"> &nbsp; </small>
+                <small id="postDetailTimeSpan" class="text-muted">&nbsp;</small>
+              </p>
+            </div>
+
+            <div class="post-content-wrapper">
+              <p id="postDetailDescription"></p>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non totam pariatur
+                quibusdam tenetur nemo tempora incidunt ex doloremque exercitationem dicta. Corporis
+                fuga totam nulla voluptatibus possimus similique aliquid nobis illo.
+              </p>
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
+                inventore hic tenetur, dolor iusto dolorum rem, non error, saepe quia dignissimos
+                quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
+              </p>
+
+              <img class="post-image" src="https://picsum.photos/1368/800" alt="Picsum photos" />
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
+                inventore hic tenetur, dolor iusto dolorum rem, non error, saepe quia dignissimos
+                quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
+              </p>
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
+                inventore hic tenetur, dolor iusto dolorum rem, non error, saepe quia dignissimos
+                quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
+              </p>
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
+                inventore hic tenetur, dolor iusto dolorum rem, non error, saepe quia dignissimos
+                quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
+              </p>
+
+              <img class="post-image" src="https://picsum.photos/1368/1000" alt="Picsum photos" />
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
+                inventore hic tenetur, dolor iusto dolorum rem, non error, saepe quia dignissimos
+                quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-center text-muted py-3">
+      <small>Created by Po with <i class="fas fa-heart"></i></small>
+    </footer>
+
+    <!-- Scripts should be placed here to prevent blocking render UI -->
+    <!-- <script type="module" src="js/post-detail.mjs"></script> -->
+  </body>
+</html>

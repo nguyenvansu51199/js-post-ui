@@ -2,7 +2,7 @@ import axios from 'axios'
 import axiosClient from './api/axiosClient'
 import postApi from './api/postsApi'
 
-console.log('hello')
+console.log('hello mainJs')
 
 async function main() {
   // const response = await axiosClient.get('/posts')
