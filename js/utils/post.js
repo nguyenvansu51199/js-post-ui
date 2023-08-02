@@ -32,8 +32,16 @@ export function createPostElement(post) {
     })
   }
 
-  // if
   // attach events
+  // go to post detail when click on div.post-item
+  const divElement = liElement.firstElementChild
+  if (divElement) {
+    divElement.addEventListener('click', () => {
+      window.location.assign(`/post-detail.html?id=${post.id}`)
+      // window.location.assign('https://google.com')
+      // console.log(window.location.toString())
+    })
+  }
 
   return liElement
 }
